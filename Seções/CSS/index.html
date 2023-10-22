@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- Internal CSS -->
+    <style>
+
+        p {
+            color: gold;
+        }
+
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Estilo/estilo.css">
+    <link rel="stylesheet" href="Estilo/lists.css">
+
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: red;">Mudar cor com o inline</h1>
+    <h1 style="color: blue;">Título 2</h1>
+    
+    <!-- Multiplas regras -->
+    <h1 style="color: pink; font-size: 30px; border-bottom: 1px solid rgb(255, 0, 0);">Mudar cor e tamanho da fonte</h1>
+
+    <!-- Internal CSS -->
+    <p>Estou mudando de estrutura pelo internal CSS</p>
+
+    <!-- Css Externo -->
+    <h3>Meu título CSS Externo</h3>
+
+    <!-- Ordem do CSS (Inline > Internal = External, os arquivos importados por último tem mais prioridade;) -->
+    <p style="color: rebeccapurple;">Ordem do CSS</p>
+
+    <!-- Multiplos CSS -->
+    <ul>
+        <li>Banana</li>
+        <li>Maça</li>
+        <li>Abacate</li>
+    </ul>
+
+    <!-- 8 - Classes -->
+    <p class="paragraph">Algum texto</p>
+    <p class="paragraph">Algum texto 2</p>
+    <p class="paragraph">Algum texto 3</p>
+
+    <!-- 9 - IDs -->
+    <h1 id="exclusive-title">Título de ID</h1>
+
+    <!-- 10 - Ordem dos Seletores (ID > Class > seletor de tag (O ID sempre vence na prioridade)) -->
+    <h2 id="id" class="class">Algum texto 1</h2>
+    <h2 class="class">Algum texto 2</h2>
+    <h2>Algum texto 3</h2>
+
+    <!-- 11 - Nome de cor -->
+    <p class="color-name">Texto para nome de cores</p>
+
+    <!-- 12 - HEX (Hexadecimal) -->
+    <p class="hex">Texto para cor hexadecimal</p>
+    <p class="hex-2">Texto para cor hexadecimal</p>
+
+    <!-- 13 - Mais sobre o HEX -->
+    <p class="simple-hex">Hex simplificado</p>
+    <p class="simple-hex-2">Hex simplificado</p>
+
+    <!-- 14 - RGB -->
+    <p class="rgb">Texto estilizado com RGB</p>
+    <p class="mixed-rgb">Texto estilizado com RGB</p>
+
+    <!-- 15 - RGBa -->
+    <p class="rgba">Texto estilizado com RGBa</p>
+
+    <!-- HSL -->
+
+</body>
+</html>

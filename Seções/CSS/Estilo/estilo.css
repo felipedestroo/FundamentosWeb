@@ -1,0 +1,77 @@
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: green;
+}
+
+/*Comentário CSS*/
+
+/* classes */
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+/* IDs */
+#exclusive-title {
+    background-color: purple;
+    color: yellow;
+    padding: 10px;
+}
+
+/* Ordem das regras */
+
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.class {
+    border-bottom: 3px solid blue;
+}
+
+#id {
+    border-bottom: 4px solid green;
+}
+
+/* Nome de cores */
+
+.color-name {
+    color:tomato;
+}
+
+/* Hex */
+
+.hex {
+    color: #55a398;
+}
+
+.hex-2 {
+    color: #88e433
+}
+
+/* Aprofundando em HEX */
+.simple-hex {
+    color: #333; /*#333333*/
+}
+
+.simple-hex-2 {
+    color: #a5f; /*#aa55ff*/
+}
+
+/* RGB */
+
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+    color: rgb(238, 111, 6);
+}
+
+/* RGBa */
+.rgba {
+    color: rgba(54, 98, 243, 0.2);
+}
