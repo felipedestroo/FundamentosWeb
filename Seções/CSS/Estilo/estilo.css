@@ -75,3 +75,50 @@ h2 {
 .rgba {
     color: rgba(54, 98, 243, 0.2);
 }
+
+/* HSL */
+
+.hsl {
+    color: hsl(347, 96%, 45%);
+}
+
+.hsl-2 {
+    color: hsl(302, 100%, 75%);
+}
+
+/* Background color */
+
+.bg {
+    background-color: #000;
+}
+
+.bg2 {
+    background-color: rgb(147, 87, 50);
+    color: #ffffff;
+}
+
+/* Background opacity */
+.bg-opacity p{
+    background-color: #20241c;
+    opacity: 0.3;
+    color: #25ff25
+}
+
+.bg-opacity-2 p{
+    background-color: #00c3ff;
+    opacity: 0.8;
+    color: #ff9100
+}
+
+/* RGBa com opacidade */
+.rgba-opacity {
+    background-color: rgba(65, 134, 76, 0.6);
+    color: blue;
+}
+
+/* BG image */
+.bg-image {
+    background-image: url(../Imagens/img1.jpg);
+    padding: 70px;
+    color: white;
+}
