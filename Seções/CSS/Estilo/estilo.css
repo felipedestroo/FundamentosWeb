@@ -24,9 +24,9 @@ h3 {
 
 /* Ordem das regras */
 
-h2 {
+/* h2 {
     border-bottom: 2px solid red;
-}
+} */
 
 .class {
     border-bottom: 3px solid blue;
@@ -269,4 +269,131 @@ h2 {
     border-radius: 10px;
     width: 200px;
     height: 48px;
+}
+
+/* Text - Align */
+.text-align {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    border: 2px solid red;
+    width: 300px;
+    border-bottom: 3px solid blue;
+}
+
+/* text decoration */
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: black;
+}
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/* Transformação de texto */
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.spacing {
+    letter-spacing: 5px;
+    color: red;
+}
+
+.font {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.italic {
+    font-style: italic;
+    font-size: 20px;
+    color: purple;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.thin, .bold, .bolder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.thin {
+    font-weight: 100;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 1000;
+}
+
+.size-maior {
+    font-size: 70px;
+
+}
+
+.size-menor {
+    font-size: 10px;
+}
+
+/* Display block */
+
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #00c3ff;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #43fa43;
+    display: block;
+    margin: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* Static */
+
+.static {
+    position: static;
+    background-color: #564;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+/* Relative */
+
+.relative {
+    position: relative;
+    background-color: #652;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    top: 100px;
+    left: 60px;
 }
