@@ -213,6 +213,13 @@ navbar-items a:hover {
     cursor: pointer;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    opacity: .8;
+    transition: all 1.4s;
+}
+
+.plan .plan-btn:hover {
+    opacity: 1;
+    transform: scale(1.05);
 }
 
 .plan .recommended {
