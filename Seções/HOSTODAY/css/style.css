@@ -177,6 +177,8 @@ navbar-items a:hover {
     color: #333;
 }
 
+
+
 .plan .price {
     width: 120px;
     height: 120px;
@@ -188,6 +190,7 @@ navbar-items a:hover {
     margin: 0 auto -50px;
     font-size: 18px;
     position: relative;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
 }
 
 .plan .plan-name {
@@ -197,6 +200,8 @@ navbar-items a:hover {
     color: #fff;
     background-color: #202b34;
     padding: 50px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
 }
 
 .plan .plan-btn {
@@ -206,6 +211,8 @@ navbar-items a:hover {
     height: 75px;
     line-height: 75px;
     cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .plan .recommended {
