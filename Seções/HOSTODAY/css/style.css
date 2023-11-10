@@ -334,7 +334,7 @@ footer p {
 
 /* Responsividade */
 
-/* Small laptops a partir de 1100px */
+/* Small Laptops a partir de 1100px */
 @media (max-width: 1100px) {
     .plans-container {
         width: 95%;
