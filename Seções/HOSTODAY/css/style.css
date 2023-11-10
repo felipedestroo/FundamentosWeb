@@ -58,14 +58,14 @@ nav {
     transition: 0.5s;
 }
 
-navbar-items a:hover {
+.navbar-items a:hover {
     color: #ccc;
 }
 
 .default-btn {
     padding: 15px 20px;
     background-color: #2cc76a;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 .navbar-items .default-btn:hover {
@@ -75,7 +75,7 @@ navbar-items a:hover {
 
 /* Banner */
 .main-banner {
-    background-image: url(../img/mainbanner.png);
+    background: url(../img/mainbanner.png);
     background-size: cover;
     background-position: center;
     padding: 10rem 0;
@@ -329,7 +329,7 @@ footer {
 
 footer p {
     color: white;
-    padding-top: 30px;
+    padding-top: 27px;
 }
 
 /* Responsividade */
