@@ -27,9 +27,13 @@ nav {
     position: relative;
 }
 
+.navbar-container img {
+    margin-top: -15px;
+}
+
 .logo {
-    width: 50px;
-    margin-top: 15px;
+
+    width: 120px;
 }
 
 .navbar-items {
@@ -219,11 +223,11 @@ navbar-items a:hover {
 
 .plan .plan-btn:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .plan .recommended {
-    background-color: #f45c57;
+    background-color: #893f89;
 }
 
 /* Search */
@@ -278,6 +282,7 @@ navbar-items a:hover {
     padding: 5rem 0 2rem 0;
 }
 
+
 .contact-container h2 {
     font-size: 36px;
     margin-bottom: 15px;
@@ -318,7 +323,13 @@ navbar-items a:hover {
 footer {
     text-align: center;
     font-weight: bold;
-    margin: 50px 0 100px;
+    height: 70px;
+    background-color:  #34454e;
+}
+
+footer p {
+    color: white;
+    padding-top: 30px;
 }
 
 /* Responsividade */
