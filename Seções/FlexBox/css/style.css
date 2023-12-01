@@ -7,3 +7,39 @@ body {
     background-color: #ccc;
     margin-bottom: 20px;
 }
+
+/* Flex-Column */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Wrap */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 40px;
+    width: 33%;
+    border: 1px solid red;
+}
+
+/* Justify content */
+.center {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.center .box {
+    width: 50px;
+}
+
+.center {
+    justify-content: center;
+}
+
