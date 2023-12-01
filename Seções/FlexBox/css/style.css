@@ -30,12 +30,18 @@ body {
 }
 
 /* Justify content */
-.center {
+.center,
+.space-around,
+.space-between,
+.end {
     display: flex;
     margin-bottom: 20px;
 }
 
-.center .box {
+.center .box,
+.space-around .box,
+.space-between .box,
+.end .box{
     width: 50px;
 }
 
@@ -43,3 +49,51 @@ body {
     justify-content: center;
 }
 
+.space-around {
+    justify-content: space-around;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.end {
+    justify-content: end;
+}
+
+/* Align items */
+
+
+.center,
+.align-center,
+.flex-end,
+.stretch {
+    display: flex;
+    margin-bottom: 20px;
+    height: 200px;
+    border: 1px solid blue;
+}
+
+.center .box,
+.align-center .box,
+.flex-end .box,
+.stretch .box{
+    width: 50px;
+}
+
+.align-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.stretch {
+    align-items: stretch;
+}
+
+.stretch .box {
+    height: auto;
+}
