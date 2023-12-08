@@ -67,11 +67,11 @@ body {
 }
 
 #login-form input[type="submit"] {
-    background-color: #b2dffc;
+    background-color: #50b4fc;
     color: #fff;
     margin-top: 15px;
-    border-radius: 5px;
-    height: 30px;
+    border-radius: 10px;
+    height: 32px;
     font-size: 13px;
     padding: 0;
     font-weight: bold;
@@ -91,7 +91,7 @@ body {
 .separator span {
     position: absolute;
     text-transform: uppercase;
-    color: #bbb;
+    color: #7c7d7d;
     background-color: #FFF;
     top: -6px;
     width: 50px;
@@ -150,15 +150,20 @@ body {
 }
 
 #register-container a {
-    color: #4a95f6;
+    color: #38abf8;
     font-weight: bold;
     text-decoration: none;
 }
 
 /* Get App */
+#get-app-container {
+    text-align: center;
+    width: 350px;
+}
+
 #get-app-container p {
     margin: 20px 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #get-app-container a {
@@ -192,7 +197,9 @@ footer #footer-links {
 }
 
 #footer-links a,
-#copyright {
+#copyright,
+#language {
+    display: flex;
     text-decoration: none;
     color: #8e8e8e;
     font-size: 12px;
