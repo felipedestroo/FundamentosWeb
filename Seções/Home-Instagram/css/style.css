@@ -199,14 +199,19 @@ footer #footer-links {
 #footer-links a,
 #copyright,
 #language {
-    display: flex;
     text-decoration: none;
     color: #8e8e8e;
     font-size: 12px;
 }
 
-#copyright {
+#language {
     margin-top: 10px;
+    float: left;
+}
+
+
+#copyright {
+    float: right;
 }
 
 /* MOBILE */
