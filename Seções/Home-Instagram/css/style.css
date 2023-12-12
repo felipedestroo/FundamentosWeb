@@ -204,16 +204,12 @@ footer #footer-links {
     font-size: 12px;
 }
 
-#language {
-    margin-top: 10px;
-    float: left;
+#footer-infos {
+    display: flex;
+    gap: 0.5 rem;
+    align-items: center;
 }
-
-
-#copyright {
-    float: right;
-}
-
+    
 /* MOBILE */
 @media(max-width: 450px) {
     body {
