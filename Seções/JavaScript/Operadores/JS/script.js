@@ -52,6 +52,26 @@ console.log(9 != "9")
 console.log(9 !== "9")
 
 // 11 - Operadores lógicos
+console.log(true && true);
+console.log(10 < 20 && 20 > 100)
+console.log(20 > 2 && "Felipe" === Number)
+console.log(2 + 8 == 10 || 10 === 10)
+console.log(!2 < 10)
+console.log(!10 > 11)
+
+// 12 - Empty value
+console.log(typeof null, typeof undefined);
+console.log(null === undefined);
+console.log(null == undefined);
+console.log(null == false);
+console.log(undefined == false);
+
+// 13 - Conv. Automática
+console.log(5 * null)
+console.log("Olá" * "Mundo")
+console.log("10" + 5)
+console.log("20" - 10)
+
 
 
 
