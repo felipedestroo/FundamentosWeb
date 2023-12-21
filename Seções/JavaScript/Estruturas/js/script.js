@@ -114,18 +114,109 @@ if(user === "João") {
 
 // 10 - While
 
-let p = 0;
+// let p = 0;
 
-while(p < 5) {
-    console.log(`Repetindo ${p}`)
-    p = p + 1
-}
+// while(p < 5) {
+//     console.log(`Repetindo ${p}`)
+//     p = p + 1
+// }
 
 // loop infinito
 
-let x = 10;
+// let x = 10;
 
-while(x > 5) {
-    console.log(`imprimindo ${x}`)
-    x = x - 1;
+// while(x > 5) {
+//     console.log(`imprimindo ${x}`)
+// }
+
+// 11 - Do while
+// let o = 10;
+
+// do {
+//     console.log(`Valor de o: ${o}`)
+//     o--
+// } while (o > 1);
+
+// 12 - For
+// for (let t = 0; t < 10; t++) {
+//     console.log("Repetindo a mensagem")
+// }
+
+// let r = 10;
+
+// for(r; r > 0; r = r - 1) {
+//     console.log(`O r está diminuindo: ${r}`)
+// }
+
+// 13 - Identação
+for (let u = 0; u < 10; u++){
+    if (u * 2 > 10) {
+        console.log(`Maior que 10! ${u}`)
+    } else {
+        if (u / 2 === 0) {
+            console.log("Deu 0")
+        }
+    }
+}
+
+// 14 - Break
+for(let g = 20; g > 10; g --){
+    console.log(`O valor de g é: ${g}`)
+
+    if ( g == 15) {
+        console.log("O g é 15");
+        break
+    }
+}
+
+for(let f = 0; f < 10; f++){
+    console.log(`O valor de f é: ${f}`)
+
+    if(f === 6) {
+        console.log("O valor de f é 6")
+        break
+    }
+}
+
+// 15 - continue
+for(let s = 1; s <= 10; s++){
+    // operador resto = %
+    if(s % 2 === 0) {
+        console.log("Número par!")
+        continue;
+    }
+
+    console.log(s)
+}
+
+// 16 - Switch
+const job = "médico"
+
+switch (job) {
+    case "Adovado":
+        console.log("Você é um advogado");
+        break;
+    case "it":
+        console.log("Você é um it");
+        break;
+    case "médico":
+        console.log("Você é um médico");
+        break;
+    default:
+        console.log("Profissão não encontrada");
+}
+
+// switch "errado" pois não tem break
+
+const l = 100;
+
+switch (l) {
+    case 200:
+        console.log("O Valor de L é 200")
+    case 100:
+        console.log("O Valor de L é 100")
+    case 10:
+        console.log("O Valor de L é 10")
+    default:
+        console.log("L não foi encontrado")
 }
