@@ -245,11 +245,11 @@
 // 17 - Reverse
 //  inverte os elementos de um array e ele modifica o array original;
 
-const reverseTest = [1, 2, 3, 4, 5];
+// const reverseTest = [1, 2, 3, 4, 5];
 
-reverseTest.reverse();
+// reverseTest.reverse();
 
-console.log(reverseTest);
+// console.log(reverseTest);
 
 // 18 - String
 // Tbm são objetos, não pode utilizar length em uma string ou array;
@@ -259,24 +259,130 @@ console.log(reverseTest);
 // 19 - Trim
 // O trim remove tudo que não é texto em uma string, como caract especial ou espaços em branco
 
-const trimTest = "      testando \n"
+// const trimTest = "      testando \n"
 
-console.log(trimTest);
-console.log(trimTest.trim());
+// console.log(trimTest);
+// console.log(trimTest.trim());
 
-console.log(trimTest.length);
-console.log(trimTest.trim().length);
+// console.log(trimTest.length);
+// console.log(trimTest.trim().length);
 
 // 20 - padstart
 
-const testPadStart = "1"
+// const testPadStart = "1"
 
-const newNumber = testPadStart.padStart(2, "C");
+// const newNumber = testPadStart.padStart(2, "C");
 
-console.log(testPadStart);
-console.log(newNumber);
+// console.log(testPadStart);
+// console.log(newNumber);
 
-const  testePadEnd = newNumber.padEnd(10, "dx");
+// const  testePadEnd = newNumber.padEnd(10, "dx");
 
-console.log(testePadEnd);
+// console.log(testePadEnd);
 
+// 21 - Split
+
+// O split divide uma string em um array, cada elemento será determinado por um separador em comum como por exemplo: ; , e espaço
+
+// const frase = "Três pratos de trigo para três tigres tristes"
+
+// const arrayDaFrase = frase.split(" ");
+
+// console.log(arrayDaFrase);
+
+// 22 - Join
+
+// O Join une um array em uma string
+
+// const fraseDeNovo = arrayDaFrase.join(" ");
+
+// console.log(fraseDeNovo);
+
+// const itensParaComprar = ["Mouse", "Teclado", "Monitor"];
+
+// const fraseDeCompra = `Precisamos comprar os itens: ${itensParaComprar.join(", ")}.`;
+
+// console.log(fraseDeCompra);
+
+// 23 - Repeat
+// O método >repete< um texto n vezes
+
+// const palavra = "Testando "
+
+// console.log(palavra.repeat(3));
+
+// 24 - Rest Operator / Rest Parameters
+// O Rest Operator é caracterizado pelo símbolo ..., podemos utilizá-lo para receber indefinidos parâmetros em uma função
+
+// const somaInfinita = (...args) => {
+
+//     let total = 0;
+
+//     for (let i = 0; i < args.length; i++) {
+//         total += args[i];
+//     }
+
+//     return total;
+// };
+
+// console.log(somaInfinita(5, 10, 15, 20, 457498, 1564657));
+
+// 25 - for...of
+//  O for of é uma estrutura de repetição semelhante ao for, porém mais simples, o número de repetição é baseado no array utilizado;
+
+// const somaInfinita2 = (...args) => {
+
+//     let total = 0;
+
+//     for(num of args) {
+//         total += num;
+//     }
+
+//     return total;
+// };
+
+// console.log(somaInfinita2(1, 2, 4));
+
+// console.log(somaInfinita2(2, 4, 6, 7, 23423, 3434))
+
+// 26 - Destructuring em objetos
+// O destructuring é uma funcionalidade que nos permite desestruturar algum dado;
+
+const userDetails = {
+    firstName: "Felipe",
+    lastName: "Destro",
+    job: "dev"
+}
+
+const { firstName, lastName, job} = userDetails;
+console.log(firstName, lastName, job);
+
+// Renomeando variáveis
+const {firstName: primeiroNome} = userDetails;
+
+console.log(firstName);
+
+// Destructuring em arrays
+const myList = ["Carro", "Avião", "Moto", "Trator"]
+
+const [veiculoA, veiculoB, veiculoC] = myList
+
+console.log(veiculoA, veiculoB, veiculoC);
+
+// 27 - JSON
+
+const myJson = '{"name": "Felipe", "age": 19, "skills": ["JS", "HTML", "CSS"]}';
+
+console.log(myJson)
+
+console.log(typeof(myJson));
+
+// Stringify = Objeto > JSON | Parse = JSON > Objeto
+
+const myObject = JSON.parse(myJson)
+
+console.log(myObject);
+
+console.log(myObject.name);
+
+console.log(typeof myObject);
