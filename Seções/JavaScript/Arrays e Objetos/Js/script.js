@@ -377,7 +377,7 @@ console.log(myJson)
 
 console.log(typeof(myJson));
 
-// Stringify = Objeto > JSON | Parse = JSON > Objeto
+// Stringify = Objeto p/ JSON | Parse = JSON p/ Objeto
 
 const myObject = JSON.parse(myJson)
 
@@ -386,3 +386,19 @@ console.log(myObject);
 console.log(myObject.name);
 
 console.log(typeof myObject);
+
+// Json inválido
+
+const badJson = '{"Name": Felipe, "age": 31}';
+
+// const myBadObject = JSON.parse(badJson);
+
+myObject.isOpenToWork = true;
+
+console.log(myObject);
+
+const myNewJson = JSON.stringify(myObject);
+
+console.log(myNewJson);
+
+console.log(typeof myNewJson);
