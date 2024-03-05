@@ -110,3 +110,21 @@ const thor = criarCachorro("Thor", "Pinscher");
 console.log(thor);
 
 console.log(Object.getPrototypeOf(thor));
+
+// 7 - Funções como classes
+function Cachorro(nome, raca) {
+    this.nome = nome;
+    this.raca = raca;
+}
+
+const husky = new Cachorro("Max", "Husky");
+
+console.log(husky);
+
+// 8 - Classes de função com métodos
+Cachorro.prototype.uivar = function() {
+    console.log("Auuuu!")
+};
+
+console.log(cachorro.prototype);
+husky.uivar();
