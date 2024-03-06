@@ -70,123 +70,199 @@
 
 // 5 - Classes básicas
 
-const cachorro = {
-    raca: null,
-    patas: 4,
-};
+// const cachorro = {
+//     raca: null,
+//     patas: 4,
+// };
 
-const pastorAlemao = Object.create(cachorro);
+// const pastorAlemao = Object.create(cachorro);
 
-pastorAlemao.raca = "Pastor Alemão"
+// pastorAlemao.raca = "Pastor Alemão"
 
-console.log(pastorAlemao);
+// console.log(pastorAlemao);
 
-console.log(pastorAlemao.patas);
+// console.log(pastorAlemao.patas);
 
-const bulldog = Object.create(cachorro);
+// const bulldog = Object.create(cachorro);
 
-bulldog.raca = "Bulldog";
+// bulldog.raca = "Bulldog";
 
-console.log(bulldog);
+// console.log(bulldog);
 
-// 6 - Funções construtoras
+// // 6 - Funções construtoras
 
-function criarCachorro(nome, raca) {
-    const cachorro = Object.create({})
+// function criarCachorro(nome, raca) {
+//     const cachorro = Object.create({})
 
-    cachorro.nome = nome
-    cachorro.raca = raca
+//     cachorro.nome = nome
+//     cachorro.raca = raca
 
-    return cachorro;
+//     return cachorro;
 
-}
+// }
 
-const bob = criarCachorro("Max", "Husky");
+// const bob = criarCachorro("Max", "Husky");
 
-console.log(bob);
+// console.log(bob);
 
-const thor = criarCachorro("Thor", "Pinscher");
+// const thor = criarCachorro("Thor", "Pinscher");
 
-console.log(thor);
+// console.log(thor);
 
-console.log(Object.getPrototypeOf(thor));
+// console.log(Object.getPrototypeOf(thor));
 
-// 7 - Funções como classes
-function Cachorro(nome, raca) {
-    this.nome = nome;
-    this.raca = raca;
-}
+// // 7 - Funções como classes
+// function Cachorro(nome, raca) {
+//     this.nome = nome;
+//     this.raca = raca;
+// }
 
-const husky = new Cachorro("Max", "Husky");
+// const husky = new Cachorro("Max", "Husky");
 
-console.log(husky);
+// console.log(husky);
 
-// 8 - Classes de função com métodos
-Cachorro.prototype.uivar = function() {
-    console.log("Auuuu!")
-};
+// // 8 - Classes de função com métodos
+// Cachorro.prototype.uivar = function() {
+//     console.log("Auuuu!")
+// };
 
-console.log(cachorro.prototype);
-husky.uivar();
+// console.log(cachorro.prototype);
+// husky.uivar();
 
-// 9 - Classes ES6
-class CachorroClasse {
-    constructor(nome, raca) {
-        this.nome = nome;
-        this.raca = raca;   
+// // 9 - Classes ES6
+// class CachorroClasse {
+//     constructor(nome, raca) {
+//         this.nome = nome;
+//         this.raca = raca;   
+//     }
+// }
+
+// const jeff = new CachorroClasse("Jeff", "Labrador");
+
+// console.log(jeff);
+
+// console.log(Object.getPrototypeOf(jeff));
+
+
+// // 10 - Mais sobre classes
+
+// class Caminhao {
+//     constructor(eixos, cor) {
+//         this.eixos = eixos;
+//         this.cor = cor; 
+//     }
+
+//     descreverCaminhao() {
+//         console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`);
+//     }
+// }
+
+// const scania = new Caminhao(6, "Vermelha")
+
+// console.log(scania);
+
+// scania.descreverCaminhao();
+
+// const c2 = new Caminhao(4, "Preta")
+
+// console.log(c2);
+// console.log(c2.motor);
+
+// Caminhao.prototype.motor = 4.0;
+
+// const c3 = new Caminhao(6, "Azul");
+
+// console.log(c3.motor);
+
+//  // 11 - Override
+//  class Humano {
+//     constructor(nome, idade) {
+//         this.nome = nome;
+//         this.idade = idade;
+//     }
+//  }
+
+//  const felipe = new Humano("Felipe", 20);
+//  console.log(felipe);
+
+// Humano.prototype.idade = "Não definida"
+
+// console.log(felipe.idade);
+
+// console.log(Humano.prototype.idade);
+
+// 12 - Symbol
+class Aviao {
+    constructor(marca, turbinas) {
+        this.marca = marca;
+        this.turbinas = turbinas;
     }
 }
 
-const jeff = new CachorroClasse("Jeff", "Labrador");
+const asas = Symbol()
+const pilotos = Symbol()
 
-console.log(jeff);
+Aviao.prototype[asas] = 2;
+Aviao.prototype[pilotos] = 3;
 
-console.log(Object.getPrototypeOf(jeff));
+const boeing = new Aviao("Boeing", 10);
+console.log(boeing);
 
+console.log(boeing[asas]);
+console.log(boeing[pilotos]);
 
-// 10 - Mais sobre classes
-
-class Caminhao {
-    constructor(eixos, cor) {
-        this.eixos = eixos;
-        this.cor = cor; 
+//13 - Getters e Setter
+class Post {
+    constructor(titulo, descricao, tags){
+        this.titulo = titulo;
+        this.descricao = descricao;
+        this.tags = tags;
     }
 
-    descreverCaminhao() {
-        console.log(`Este caminhão tem ${this.eixos} eixos e é da cor ${this.cor}`);
-    }
-}
-
-const scania = new Caminhao(6, "Vermelha")
-
-console.log(scania);
-
-scania.descreverCaminhao();
-
-const c2 = new Caminhao(4, "Preta")
-
-console.log(c2);
-console.log(c2.motor);
-
-Caminhao.prototype.motor = 4.0;
-
-const c3 = new Caminhao(6, "Azul");
-
-console.log(c3.motor);
-
- // 11 - Override
- class Humano {
-    constructor(nome, idade) {
-        this.nome = nome;
-        this.idade = idade;
-    }
+ get exibirTitulo() {
+    return `Voce está lendo: ${this.titulo}`;
  }
+ 
+ set adicionarTags(tags) {
+    const tagsArrays = tags.split(", ")
+    this.tags = tagsArrays
+ }
+}
 
- const felipe = new Humano("Felipe", 20);
- console.log(felipe);
+const myPost = new Post("Algum post", "É um post sobre programação")
 
-Humano.prototype.idade = "Não definida"
+console.log(myPost);
 
-console.log(felipe.idade);
+console.log(myPost.exibirTitulo)
 
-console.log(Humano.prototype.idade);
+myPost.adicionarTags = "programação, javascript, js";
+
+console.log(myPost)
+
+// 14 - Herança
+class Mamifero {
+    constructor(patas){
+        this.patas = patas;
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas, nome) {
+        super(patas, patas)
+        this.nome  = nome;
+    }
+}
+
+const wolf = new Lobo(4, "Wolf");
+
+console.log(wolf.patas);
+
+
+// 15 - Instanceof
+console.log(wolf instanceof Lobo);
+
+console.log(wolf instanceof Mamifero);
+
+console.log(new Lobo(4, "teste") instanceof Mamifero);
+
+console.log(new Post("a", "b") instanceof Lobo)
