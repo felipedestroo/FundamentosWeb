@@ -10,7 +10,7 @@ console.log(document.body.childNodes[1].childNodes[1].textContent);
 
 // 2- Selecionando por tag
 
-const listItens = document.getElementsByTagName("li")
+const listItens = document.getElementsByTagName("li");
 
 console.log(listItens);
 
@@ -19,3 +19,8 @@ console.log(listItens);
 const title = document.getElementById("title");
 
 console.log(title);
+
+// 4 - Selecionando elementos por classe
+const products = document.getElementsByClassName("product");
+
+console.log(products);
