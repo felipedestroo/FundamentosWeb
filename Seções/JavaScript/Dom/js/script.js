@@ -13,3 +13,9 @@ console.log(document.body.childNodes[1].childNodes[1].textContent);
 const listItens = document.getElementsByTagName("li")
 
 console.log(listItens);
+
+// 3 - getElementById
+
+const title = document.getElementById("title");
+
+console.log(title);
