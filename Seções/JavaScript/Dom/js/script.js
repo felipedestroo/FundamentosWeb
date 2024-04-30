@@ -24,3 +24,15 @@ console.log(title);
 const products = document.getElementsByClassName("product");
 
 console.log(products);
+
+// 5 - querySelectorAll (Seletor de CSS)
+
+// Para selecionar vários elementos utilizamos o querySelectorAll, e com o querySelector apenas um elemento com base no seletor de CSS.
+
+const productsQuery = document.querySelectorAll(".product");
+
+console.log(productsQuery);
+
+const mainContainer = document.querySelector("#main-container");
+
+console.log(mainContainer);
