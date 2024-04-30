@@ -88,4 +88,36 @@ somarComDelay(2, 4).then((value) => {
     console.log(`O valor da soma é ${value}`);
 });
 
-console.log("teste async")
+console.log("teste async");
+
+// 8 - async await
+
+function resolveComDelay() {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve("Resolveu a Promise");
+        }, 2000);
+    });
+}
+
+async function chamadaAsync() {
+    console.log("Chamando a Promise, esperando o resultado")
+    const result = await resolveComDelay()
+    console.log(`O resultado chegou: ${result}`);
+}
+
+chamadaAsync()
+
+// 9 - generators
+
+function* generator() {
+    yield 1;
+    yield 2;
+    yield 3;
+}
+
+const gen = generator()
+
+console.log(gen.next().value);
+console.log(gen.next().value);
+console.log(gen.next().value);
