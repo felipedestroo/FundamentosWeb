@@ -86,7 +86,7 @@ console.log(firstLink.getAttribute("href"));
 
 firstLink.setAttribute("target", "_blank");
 
-// 11 0 altura e largura
+// 11 - altura e largura
 
 const footer = document.querySelector("footer")
 
@@ -95,3 +95,21 @@ console.log(footer.offsetHeight);
 
 console.log(footer.clientWidth);
 console.log(footer.clientHeight);
+
+// 12 - Posicao do elemento
+
+const product1 = products[0]
+
+console.log(product1.getBoundingClientRect());
+
+// 13 - Estilos com JS
+
+mainContainer.style.color = "red";
+mainContainer.style.backgroundColor = "#CCCC";
+mainContainer.style.paddingBottom = "15px";
+
+// 14 - Alterando estilos de vários elementos
+
+for(const li of listItens) {
+    li.style.backgroundColor = "red";
+}
