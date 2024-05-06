@@ -33,3 +33,17 @@ myTitle.addEventListener("click", (event) => {
     console.log(event.pointerType);
     console.log(event.target);
 })
+
+// 4 - Propagação
+
+const containerBtn = document.querySelector("#btn-container");
+const insideContainerBtn = document.querySelector("#div-btn")
+
+containerBtn.addEventListener("click", () => {
+    console.log("Click 1");
+});
+
+insideContainerBtn.addEventListener("click", (e) =>{
+    e.stopPropagation();
+    console.log("Click 2");
+});
