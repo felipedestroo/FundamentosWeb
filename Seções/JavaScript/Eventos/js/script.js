@@ -47,3 +47,12 @@ insideContainerBtn.addEventListener("click", (e) =>{
     e.stopPropagation();
     console.log("Click 2");
 });
+
+// 5 - Removendo evento padrão
+
+const a = document.querySelector("a")
+
+a.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log("Não mudou de página");
+});
