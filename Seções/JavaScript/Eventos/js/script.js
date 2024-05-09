@@ -80,3 +80,9 @@ mouseEvents.addEventListener("mouseup", () => {
 mouseEvents.addEventListener("dblclick", () => {
     console.log("Clique Duplo");
 });
+
+// 8 - Movimento do mouse
+document.addEventListener("mousemove", (e) => {
+    // console.log(`No eixo X: ${e.x}`);
+    // console.log(`No eixo Y: ${e.y}`);
+});
