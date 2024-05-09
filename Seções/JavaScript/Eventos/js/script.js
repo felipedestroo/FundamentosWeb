@@ -86,3 +86,31 @@ document.addEventListener("mousemove", (e) => {
     // console.log(`No eixo X: ${e.x}`);
     // console.log(`No eixo Y: ${e.y}`);
 });
+
+// 9 - Evento por scroll
+window.addEventListener("scroll", (e) => {
+    if(window.pageYOffset > 200) {
+        console.log("Passamos de 200 pixels");
+    }
+})
+
+// 10 - Evento de focus/blur
+const input = document.querySelector("#my-input");
+
+input.addEventListener("focus", (e) => {
+    console.log("Entrou no input");
+});
+
+input.addEventListener("blur", (e) => {
+    console.log("Saiu do input");
+});
+
+// 11 - Evento de carregamento
+window.addEventListener("load", () => {
+    console.log("A página carregou");
+});
+
+window.addEventListener("beforeunload", (e) => {
+    e.preventDefault();
+    e.returnValue = "teste";
+})
