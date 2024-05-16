@@ -71,5 +71,33 @@ h2 {
 }
 
 #multiplication-form input[type="submit"]:hover {
-    background-color: #222831;
+    background-color: #313a47;
+}
+
+#multiplication-operations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 1rem auto;
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+#multiplication-operations .row {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #394a51;
+    border-bottom: none;
+    padding: 0.5rem;
+    width: 150px;
+}
+
+#multiplication-operations .row:last-child {
+    border-bottom: 1px solid #394a51;
+}
+
+#multiplication-operations .result {
+    margin-left: 0.4rem;
 }
